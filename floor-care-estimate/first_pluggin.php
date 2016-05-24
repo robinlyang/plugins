@@ -25,7 +25,16 @@ along with {Plugin Name}. If not, see {License URI}.
 /*TEST*/
 
 function test() {
+    //$loginPage = "/login/";
+    //$currentPage = $_SERVER['REQUEST_URI'];
+    if(is_page(6229))
+    {
+        echo 'WORKED';
+    }
+    else 'TEST';
     
 }
+
+add_filter('the_content', 'test');
 
 ?>
