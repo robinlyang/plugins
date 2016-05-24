@@ -24,4 +24,8 @@ along with {Plugin Name}. If not, see {License URI}.
 
 /*TEST*/
 
+function test() {
+    
+}
+
 ?>
