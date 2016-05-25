@@ -24,30 +24,31 @@ along with {Plugin Name}. If not, see {License URI}.
 
 /*TEST*/
 
+
 function test() {
     //$loginPage = "/login/";
     //$currentPage = $_SERVER['REQUEST_URI'];
     if(is_page(6229))
     {
-        $nOne = $nTwo = "";
-        $one = $two = $result = 0;
-        
-        if($_SERVER['REQUEST_METHOD'] == 'POST') {
-            $nOne = $_POST["NOne"];
-            $nTwo = $_POST["NTwo"];
-            $one = intval($nOne);
-            $two = intval($nTwo);
-            $result = $one + $two;
-            echo $result . '<br>';
-        } 
 
-        echo 'NEW FORM';
-        echo '<form method="post">'
-            . 'N1: <input type="text" name="NOne"><br>'
-            . 'N2: <input type="text" name="NTwo"><br>'
-            . '<input type="submit" name="submit" value="Add"';
         
-        
+//        $nOne = $nTwo = "";
+//        $one = $two = $result = 0;
+//        
+//        if($_SERVER['REQUEST_METHOD'] == 'POST') {
+//            $nOne = $_POST["NOne"];
+//            $nTwo = $_POST["NTwo"];
+//            $one = intval($nOne);
+//            $two = intval($nTwo);
+//            $result = $one + $two;
+//            echo $result . '<br>';
+//        } 
+//
+//        echo 'NEW FORM';
+//        echo '<form method="post">'
+//            . 'N1: <input type="text" name="NOne"><br>'
+//            . 'N2: <input type="text" name="NTwo"><br>'
+//            . '<input type="submit" name="submit" value="Add"';
     }
     
 }
