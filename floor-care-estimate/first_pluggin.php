@@ -66,19 +66,26 @@ function test() {
         $result = $sqFootage = $hrPerCleaning =  $pdRate = $pPSquareFoot 
                 = $fOfServiceWk = 0;
         
-        if($_POST) {
-            $squareFootage = $_POST["squareFootage"];
-            $hoursPerCleaning = $_POST["hoursPerCleaning"];
-            $pricePSquareFoot = $_POST["pricePSquareFoot"];
-            $freqOfServiceWk = $_POST["freqOfServiceWk"];
-            
-            $sqFootage = intval($squareFootage);
-            $hrPerCleaning = intval($hoursPerCleaning);
-            $pPSquareFoot = intval($pricePSquareFoot);
-            $fOfServiceWk = intval($freqOfServiceWk);
-            
-            $result = $sqFootage + $hrPerCleaning;
-            echo $result . '<br>';
+        if($_SERVER["REQUEST_METHOD"] == "POST") {
+            if($_POST["calculate"]){
+                $squareFootage = $_POST["squareFootage"];
+                $hoursPerCleaning = $_POST["hoursPerCleaning"];
+                $pricePSquareFoot = $_POST["pricePSquareFoot"];
+                $freqOfServiceWk = $_POST["freqOfServiceWk"];
+
+                $sqFootage = intval($squareFootage);
+                $hrPerCleaning = intval($hoursPerCleaning);
+                $pPSquareFoot = intval($pricePSquareFoot);
+                $fOfServiceWk = intval($freqOfServiceWk);
+
+                $result = $sqFootage + $hrPerCleaning;
+                echo $result . '<br>';
+            }
+            if($_POST["clear"]){
+                
+                echo '<br>CLEARED<br>';
+            }
+
         }        
         
         echo '<br><br><h2>Floor Care Estimate</h2><br>';
@@ -150,7 +157,8 @@ function test() {
                 
                 
                 . '<tr>'
-                    . '<td colspan="2"><input type="submit" name="submit" value="Calculate"</td>'
+                    . '<td colspan="2"><input type="submit" name="calculate" value="Calculate">'
+                    . '&nbsp;&nbsp;&nbsp;<input type="submit" name="clear" value="Clear"></td>'
                 . '</tr>'
                 . '</table>';
         
