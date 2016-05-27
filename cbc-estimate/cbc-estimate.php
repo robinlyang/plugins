@@ -79,18 +79,18 @@ function estimate() {
             <table>
                 <tr>
                     <td>
-                <table class="borderless-table">
+                <table class="borderless">
                     <form method="post">
-                        <tr class="borderless-th">
-                            <td class="borderless-td"><strong>Particulars</strong></td>
-                            <td><strong>Values</strong></td>
+                        <tr class="borderless">
+                            <td class="borderless"><strong>Particulars</strong></td>
+                            <td class="borderless"><strong>Values</strong></td>
                         </tr>  
-                        <tr>
+                        <tr class="borderless">
                             <td class="align-left"><strong>1. Cleanable square 
                             footage</strong><br>
                             Enter total cleanable square feet of this location 
                             (e.g., 20000)</td>
-                            <td nowrap>&nbsp;&nbsp;<input type="text" name="txtSqFt"></td>
+                            <td nowrap class="borderless">&nbsp;&nbsp;<input type="text" name="txtSqFt"></td>
                         </tr>  
                         <tr>
                             <td class="align-left"><stong>2. Hours per cleaning</stong><br>
@@ -99,7 +99,7 @@ function estimate() {
                             will take to complete the job and enter that number 
                             here. If you already know your production rate, you 
                             can skip this step and go to Step 3.</td>
-                            <td nowrap>&nbsp;&nbsp;<input type="text" name="hrPrCleaning"></td>
+                            <td nowrap class="borderless">&nbsp;&nbsp;<input type="text" name="hrPrCleaning"></td>
                         </tr> 
                         <tr>
                             <td class="align-left"><strong>3. Production rate (square feet 
@@ -110,7 +110,7 @@ function estimate() {
                             number instead of entering the Hours per cleaning 
                             above (this will automatically calculate the estimated 
                             Hours per cleaning in Step 2 above)</td>
-                            <td nowrap>&nbsp;&nbsp;<input type="text" name="prRate"></td>
+                            <td nowrap class="borderless">&nbsp;&nbsp;<input type="text" name="prRate"></td>
                         </tr>
                         <tr>
                             <td class="align-left"><strong>4. Price per square 
@@ -127,7 +127,7 @@ function estimate() {
                             to make a profit. This will become apparent after 
                             expenses are entered. If you want to estimate the price 
                             by the hour, skip this step and go to Step 5</td>
-                            <td nowrap>$&nbsp;<input type="text" name="prPrSqFoot"></td>
+                            <td nowrap class="borderless">$&nbsp;<input type="text" name="prPrSqFoot"></td>
                         </tr>
                         <tr>
                             <td class="align-left"><strong>5. Price per hour</strong><br>
@@ -136,7 +136,7 @@ function estimate() {
                             use an hourly rate if you are performing services less 
                             than 5 days per week and in smaller buildings of less 
                             than 10,000 square feet</td>
-                            <td nowrap>$&nbsp;<input type="text" name="prPrHour"></td>
+                            <td nowrap class="borderless">$&nbsp;<input type="text" name="prPrHour"></td>
                         </tr>
                         <tr>
                             <td class="align-left"><strong>6. Frequency of service</strong><br>
@@ -146,24 +146,24 @@ function estimate() {
                             work if you enter days per month or days per year)</td>
                             <tr>
                                 <td class="align-left"><strong>A. Days per week</strong></td>
-                                <td nowrap>&nbsp;&nbsp;<input type="text" name="frOfSrWeek"></td>
+                                <td nowrap class="borderless">&nbsp;&nbsp;<input type="text" name="frOfSrWeek"></td>
                             </tr>
                             <tr>
                                 <td class="align-left"><strong>B. Days per month</strong></td>
-                                <td nowrap>&nbsp;&nbsp;<input type="text" name="frOfSrMonth"></td>
+                                <td nowrap class="borderless">&nbsp;&nbsp;<input type="text" name="frOfSrMonth"></td>
                             </tr>
                             <tr>
                                 <td class="align-left"><strong>C. Days per year</strong></td>
-                                <td nowrap>&nbsp;&nbsp;<input type="text" name="frOfSrYear"></td>
+                                <td nowrap class="borderless">&nbsp;&nbsp;<input type="text" name="frOfSrYear"></td>
                             </tr>
                         </tr>
                         <tr>
                             <td class="align-left"><strong>Total monthly charges</strong></td>
-                            <td>$&nbsp;<input type="text" name="TlMnCharges"></td>
+                            <td class="borderless">$&nbsp;<input type="text" name="TlMnCharges"></td>
                         </tr>
                         
                         <tr>
-                            <td colspan="2"><input type="submit" name="calculate" value="Calculate">
+                            <td colspan="2" class="borderless"><input type="submit" name="calculate" value="Calculate">
                             &nbsp;&nbsp;&nbsp;<input type="submit" name="clear" value="Clear"></td>
                         </tr>
                     </form>   

@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : RobinY
 */
 
-.borderless-table {
+.borderless{
     border: solid 0px #ccc;
 }
 .borderless-th {
@@ -19,9 +19,11 @@ and open the template in the editor.
 }
 .align-right {
     text-align: right;
+    border: solid 0px #ccc;
 }
 .align-left {
     text-align: left;
+    border: solid 0px #ccc;
 }
 .align-center {
     text-align: center;
